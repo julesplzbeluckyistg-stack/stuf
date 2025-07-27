@@ -555,15 +555,10 @@ body::after {
 }
 
 .math-section:hover {
-    background: rgba(147, 112, 219, 0.12);
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
-}
-
-.math-section:hover {
     opacity: 1;
     background: rgba(138, 43, 226, 0.15);
     backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
 }
 
 .math-section:hover .expand-arrow {

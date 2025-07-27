@@ -556,7 +556,6 @@ body::after {
 
 .math-section:hover {
     opacity: 1;
-    background: rgba(138, 43, 226, 0.15);
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
 }

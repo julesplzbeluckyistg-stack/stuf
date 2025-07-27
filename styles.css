@@ -601,19 +601,19 @@ body::after {
 }
 
 .math-section-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     border-radius: 0 0 10px 10px;
     opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
     transition: all 0.4s ease;
     border-top: none;
+    overflow: hidden;
 }
 
 .math-section:hover .math-section-content {
-    max-height: 1000px;
-    padding: 1.5rem;
     opacity: 1;
+    transform: scaleY(1);
 }
 
 .math-section h4 {

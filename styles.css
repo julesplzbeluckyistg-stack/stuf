@@ -122,6 +122,7 @@ body::after {
 
 #container {
    position: relative;
+    overflow: hidden;
     z-index: 1;
     height: 200px;
     margin: 2rem 0;
@@ -556,7 +557,6 @@ body::after {
 .math-section:hover {
     background: rgba(147, 112, 219, 0.12);
     z-index: 10;
-    transform: scale(1.02);
     box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
 }
 
@@ -571,9 +571,9 @@ body::after {
 }
 
 .math-section:hover .math-section-content {
-    max-height: 2000px;
-    padding: 1.5rem;
-    padding-top: 0;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .math-section-header {
@@ -606,10 +606,22 @@ body::after {
 }
 
 .math-section-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    padding: 0 1.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(138, 43, 226, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 5;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    border-top: none;
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
     position: relative;
     z-index: 1;
 }

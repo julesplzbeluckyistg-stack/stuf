@@ -602,14 +602,11 @@ body::after {
 .math-section-content {
     max-height: 0;
     overflow: hidden;
-    backdrop-filter: blur(10px);
     padding: 0 1.5rem;
     border-radius: 0 0 10px 10px;
     opacity: 0;
     transition: all 0.4s ease;
-    border: 1px solid rgba(138, 43, 226, 0.3);
     border-top: none;
-    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
 }
 
 .math-section:hover .math-section-content {
